@@ -5,7 +5,7 @@ class Item:
     #---------------------------Atributos de clase
     impuesto=0.16
     envio=30
-    #---------------------------Atributos o caracteristicas
+    #---------------------------Atributos o caracteristicas de Instancia
     def __init__(self,precio:float,modelo:str,marca:str):
         #Atributos de Inatancia
         self.modelo=modelo
