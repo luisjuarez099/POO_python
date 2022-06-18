@@ -6,8 +6,8 @@ class Item:
     impuesto=0.16
     envio=30
     #---------------------------Atributos o caracteristicas de Instancia
-    def __init__(self,precio:float,modelo:str,marca:str):
-        #Atributos de Inatancia
+    def __init__(self,precio:float,modelo:str,marca:str):#__init__: el constructor
+        #Atributos de Inatancia. Inicializando variables de Instancia que apunta a memoria. 
         self.modelo=modelo
         self.marca=marca
         self.precio=precio
@@ -15,6 +15,7 @@ class Item:
     def Pago_total(self):
         #Pago total a pagar precio por cantidad. (Precio en Dollar)
         self.cantidad=int(input(f"Digta cantidad de Telefonos que quiere: "))
+        assert self.cantidad>=1, f"Debe seleccionar al menos UN producto" #Validacion
         self.total=self.precio*self.cantidad
         return self.total
 
