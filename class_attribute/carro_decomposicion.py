@@ -22,12 +22,11 @@ class Motor:
     def gasolina(self,cantidad):
         pass
 
-class Llantas:
+class Llantas:#Padre
     def __init__(self,ancho=int,alto=int,diametro=int) -> None:
         self.ancho=ancho
         self.alto=alto
         self.diametro=diametro
-invierno=Llantas(10,50,30)
-print(invierno.ancho())
-
-
+class LlantasNieve(Llantas):#Hija de Llantas
+    pass
+print(LlantasNieve.__base__)
