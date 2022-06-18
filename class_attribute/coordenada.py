@@ -1,6 +1,3 @@
-from re import X
-
-
 class Coordenada:
     
     def __init__(self,x,y) -> None:
@@ -11,7 +8,7 @@ class Coordenada:
         x_diff=(self.x - coordenada.x )**2
         y_diff=(self.y - coordenada.y )**2
 
-        return (x_diff + y_diff)**0.5
+        return (x_diff + y_diff)**0.5 #Se elevo al cuadrado 0.5 
 
 
 
