@@ -11,10 +11,10 @@ class Moneda(ABC):
 
 class MxEua(ABC):
     @abstractmethod
-    def MxEua(self):
+    def MxEua(self):# mx -> dollar eua
         pass
     @abstractmethod
-    def MxCan(self):
+    def MxCan(self):# mx -> dollar can
         pass
 
 class AmeMx(Moneda):
