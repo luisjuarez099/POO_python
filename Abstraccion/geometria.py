@@ -4,6 +4,7 @@ class Forma(ABC):
     @abstractmethod
     def perimetro(self):
         pass
+    @abstractmethod
     def area(self):
         pass
 
@@ -29,7 +30,7 @@ triangulo=Triangulo(12,15,5)
 
 print(f"El perimetro de  {cuadrado.lados}  es de : {cuadrado.perimetro()}")
 print(f"El Area de {cuadrado.lados}  es de : {cuadrado.area()}")
-
+print()
 print(f"El perimetro de  {triangulo.lado}  es de : {triangulo.perimetro()}")
 print(f"El Area del triangulo es base: {triangulo.base} X {triangulo.altura} es de : {triangulo.area()}")
         
