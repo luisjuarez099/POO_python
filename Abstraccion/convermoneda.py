@@ -13,6 +13,9 @@ class MxEua(ABC):
     @abstractmethod
     def MxEua(self):
         pass
+    @abstractmethod
+    def MxCan(self):
+        pass
 
 class AmeMx(Moneda):
     def __init__(self,cantidad,pesoeua=20.3638,pesocan=15.6333) -> None:
@@ -26,16 +29,19 @@ class AmeMx(Moneda):
         return self.cantidad * self.pesocan
 
 class PesoMxaEua(MxEua):
-    def __init__(self,monedaeua=int,pesoMx=0.0491681) -> None:
+    def __init__(self,moneda=int,pesoMx=0.0491681,pesoMxc=0.0640086) -> None:
         self.pesoMx=pesoMx
-        self.monedaeua=monedaeua
+        self.pesoMxc=pesoMxc
+        self.moneda=moneda
     def MxEua(self):
-        return self.pesoMx * self.monedaeua
-
+        return self.pesoMx * self.moneda
+    def MxCan(self):
+        return self.pesoMxc * self.moneda
 #Instancias
 Moneda1=AmeMx(100)
 print(f"{Moneda1.cantidad} dolares Americanos a peso Mexicano es de {Moneda1.EuaMx()}")
 print(f"{Moneda1.cantidad} dolares Canadiense a peso Mexicano es de {Moneda1.CanMx()}")
 
-mxeua=PesoMxaEua(2000)
-print(f"{mxeua.monedaeua} Peso Mexicanos son {round(mxeua.MxEua(),2)} Dolares Americanos")
+mxeua=PesoMxaEua(100)
+print(f"{mxeua.moneda} Peso Mexicanos son {round(mxeua.MxEua(),2)} Dolares Americanos")
+print(f"{mxeua.moneda} Peso Mexicanos son {round(mxeua.MxCan(),2)} Dolares Canadienses")
