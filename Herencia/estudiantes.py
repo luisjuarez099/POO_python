@@ -13,7 +13,7 @@ class Persona:
 class Alumno(Persona):#Hereda de la clase Persona
     #propio constructor
     def __init__(self, nombre, edad, escuela,promedio,carrera) -> None:
-        super().__init__(nombre, edad)
+        super().__init__(nombre, edad)#de la clase super clase
         self.promedio=promedio
         self.carrera=carrera
         self.escuela=escuela
