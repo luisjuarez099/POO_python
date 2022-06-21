@@ -1,3 +1,5 @@
+from carrosalmacen import Sub
+
 class Tcredito():
     def __init__(self,nombre,banco,vigencia,limite_credito) -> None:
         self.nombre=nombre#Nombre de la persona
@@ -6,7 +8,7 @@ class Tcredito():
         self.limite_credito=limite_credito #saldo disponible
     def SinIntereses(self):
         print("6 Meses de pagos sin intereses")
-        
+
     def PagoRenta(self):
         pass
     
@@ -17,5 +19,4 @@ class Tdebito(Tcredito):
 
     def PagoRenta(self):
         pass
-    
 
