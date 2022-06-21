@@ -32,9 +32,9 @@ class Trabajador(Persona):
     def calcularSueldo(self):
         return  self.sueldo / 6
 
-alumno=Alumno("Luis",23,"UNEDL",65,"Ing. Software")
-alumno.Presentarse()
-alumno.SigSemestre()
+alumno1=Alumno("Luis",23,"UNEDL",65,"Ing. Software")
+alumno1.Presentarse()
+alumno1.SigSemestre()
 
 trabajador=Trabajador("Julio",55,1200,"programador")
 print(f"Hola, me llamo {trabajador.nombre}, mi edad es de {trabajador.edad} anios y trabajo como {trabajador.puesto} Mucho gusto")
