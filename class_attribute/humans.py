@@ -2,15 +2,17 @@ from ast import Constant
 
 
 class Humans():
+    #Atributo de clases
     def __init__(self,name:str,age:int,occupation:str,sex:str,stature:float) -> None:
         #Manejo de exepciones
         assert age>=0, f"La edad no puede ser menor que cero"
-        #Se inicializa el objeto de la clase Humans
+        #Atributos de Instancia.
         self.name=name
         self.age=age
         self.occupation=occupation
         self.sex=sex
         self.stature=stature
+    #Metodo de Instancia
     def pies_to_meters(self):
         return self.stature/3.28
         
