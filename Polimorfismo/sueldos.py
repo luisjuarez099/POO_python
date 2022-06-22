@@ -31,7 +31,7 @@ class Becario(Empleado):
 
 empleado=Empleado("Juan",80)
 contador=Contable("Emilio",60)
-vendedor=Vendedor("Francia",120)
+vendedor=Vendedor("Alejandra",120)
 becario=Becario("Luis",65)
 
 DATA=[empleado,contador,vendedor,becario]
