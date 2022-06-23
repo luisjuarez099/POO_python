@@ -42,25 +42,25 @@ alum=Informacion("Luis", 23, "UNEDL", "Universidad")
 alum2=Informacion("Ernesto", 25, "UVM", "Preparatoria")
 alum3=Informacion("Emilia", 35, "ITESO", "Universidad")
 
-# Uso de __eq__
-# print(alum2==alum3)
-
-# Uso de __repr__
-# print(repr(alum))
-# print(repr(alum3))
-
-#Uso de __hash__
-# print(hash(alum2))
-
-#Uso de __bool__
-print(bool(alum))
 
 if __name__=="__main__":
-    pass
-    # print(f"Fecha de emision: {Informacion.emision}")
-    # print(f"Fecha de vigencia: {Informacion.vigencia}")
-    # print(alum)
-    # print(alum2)
+    
+    print(f"Fecha de emision: {Informacion.emision}")
+    print(f"Fecha de vigencia: {Informacion.vigencia}")
+    print(alum)
+    print(alum2)
+    print("Uso de __eq__")
+    print(alum2==alum3)
+
+    print("Uso de __repr__")
+    print(repr(alum))
+    print(repr(alum3))
+
+    print("Uso de __hash__")
+    print(hash(alum2))
+
+    print("Uso de __bool__")
+    print(bool(alum))
 
 '''
 SPECIAL METHODS
