@@ -54,6 +54,7 @@ alum3=Informacion("Emilia", 35, "ITESO", "Universidad")
 
 #Uso de __bool__
 print(bool(alum))
+
 if __name__=="__main__":
     pass
     # print(f"Fecha de emision: {Informacion.emision}")
@@ -67,7 +68,7 @@ SPECIAL METHODS
     __repr__ # Devuelve la representación de cadena de un objeto
     __eq__ #Compara dos instancias  de clase
     __hash__
-__bool__
+    __bool__
 __del__
 
 '''
