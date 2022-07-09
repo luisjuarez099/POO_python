@@ -43,6 +43,6 @@ class Mascota():
 mascota=Mascota("Queso","Gato")
 print(f"{mascota.nombre} es el nombre del {mascota.animal}")
 
-mascota.nombre="Cokita"
+mascota.nombre=input("Nombre del gato: ")
 print(f"{mascota.nombre} es el nombre del {mascota.animal}")
 del mascota.nombre
