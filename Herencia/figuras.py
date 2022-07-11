@@ -24,9 +24,10 @@ class Octagono(Rectangulo):
 if __name__=='__main__':
     triangulo=Triangulo(base=2,altura=4)
     print(triangulo.area())
-
+    #resultado= 4
     cuadrado=Rectangulo(4,6)
     print(cuadrado.perimetro())
-
-    octagono=Octagono(5)
+    #resultado= 20
+    octagono=Octagono(7)
     print(octagono.perimetro())
+    #resultado= 28, porque hereda la formula de perimetro
