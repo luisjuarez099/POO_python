@@ -1,1 +1,1 @@
-print("Mi priemera linea de Busqueda Lineal")
+print("Mi priemera linea de Busqueda lineal")
